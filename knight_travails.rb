@@ -1,4 +1,4 @@
-require_relative "../poly_tree_node/lib/00_tree_node"
+require_relative 'tree_node'
 require 'set'
 
 class KnightPathFinder
