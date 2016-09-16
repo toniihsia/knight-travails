@@ -16,20 +16,20 @@ class KnightPathFinder
   end
 
   def possible_positions(pos)
-    possible_positions = []
+    positions = []
     x, y = pos
 
     [-2, 2].each do |long|
       [-1, 1].each do |short|
         move = [x + long, y + short]
-        possible_positions << move if KnightPathFinder.valid_move?(move)
+        positions << move if KnightPathFinder.valid_move?(move)
 
         move = [x + short, y + long]
-        possible_positions << move if KnightPathFinder.valid_move?(move)
+        positions << move if KnightPathFinder.valid_move?(move)
       end
     end
 
-    possible_positions
+    positions
   end
 
 
