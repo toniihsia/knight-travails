@@ -70,7 +70,4 @@ class KnightPathFinder
       end
     end
   end
-
-
-
 end
